@@ -56,6 +56,12 @@ setInterval(() => {
   gameLoop();
 }, 20);
 
+function reset() {
+  obstacle.x = 500;
+  player.y = 175;
+  player.speed = -6;
+}
+
 function render() {
   player.speed += 0.3;
   player.y += player.speed;
